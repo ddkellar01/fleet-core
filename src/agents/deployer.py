@@ -18,5 +18,5 @@ class Deployer(BaseAgent):
             return {"repo": repo, "deployed": False,
                     "detail": "Refused: candidate has not passed testing."}
         return {"repo": repo, "deployed": True,
-                "rollback_point": f"pre-deploy snapshot of {repo}",
+                "rollback_point": f"pre-deploy rollback snapshot of {repo}",
                 "detail": "[sim] Deployed with rollback point recorded."}
