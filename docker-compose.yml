@@ -1,0 +1,20 @@
+services:
+  fleet-core:
+    build: .
+    container_name: fleet_core
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - WG_PRIVATE_KEY=${WG_PRIVATE_KEY}
+      - FLEET_DB=${FLEET_DB:-/app/fleet.db}
+    cap_add:
+      - NET_ADMIN          # required for WireGuard inside the container
+    devices:
+      - /dev/net/tun
+    volumes:
+      - fleet-data:/app
+    restart: unless-stopped
+
+volumes:
+  fleet-data:
