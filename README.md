@@ -10,68 +10,54 @@
 ## 🤖 What is this about?
 **Fleet** is an autonomous, self-healing multi-agent orchestration framework designed to manage, verify, test, and deploy software repositories across a secure network topology[span_0](start_span)[span_0](end_span). Driven by **Gemini Pro Thinking** capabilities and secured via **WireGuard** tunneling, Fleet coordinates specialized AI agents to execute continuous integration missions and audit codebases[span_1](start_span)[span_1](end_span).
 
-# 🚀 fleet-core — Architecture & Technical Stack
+# 🚀 fleet-core
 
-## 🧰 Tech Stack badges & Architecture
+## 🧰 Tech Stack Badges & Architecture
 
-[![Go Version](https://img.shields.io/github/go-mod/go-version/fleet-core/fleet-core?style=flat-square&logo=go)](https://golang.org)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/fleet-core/fleet-core/ci.yml?style=flat-square&logo=githubactions)](https://github.com/fleet-core/fleet-core/actions)
-[![License](https://img.shields.io/github/license/fleet-core/fleet-core?style=flat-square)](LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/fleetcore/core?style=flat-square&logo=docker)](https://hub.docker.com/r/fleetcore/core)
-[![Release](https://img.shields.io/github/v/release/fleet-core/fleet-core?style=flat-square)](https://github.com/fleet-core/fleet-core/releases)
+### 💻 Core Programming Languages & Core Systems
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![gRPC](https://img.shields.io/badge/gRPC-2DA6B0?style=for-the-badge&logo=grpc&logoColor=white)
+![Protocol Buffers](https://img.shields.io/badge/Protocol_Buffers-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
----
+### ⛓️ Web3 & Infrastructure
+![libp2p](https://img.shields.io/badge/libp2p-3B82F6?style=for-the-badge&logo=libp2p&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white)
+![Web3.js](https://img.shields.io/badge/Web3.js-F16822?style=for-the-badge&logo=web3dotjs&logoColor=white)
+![IPFS](https://img.shields.io/badge/IPFS-65C2CB?style=for-the-badge&logo=ipfs&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
 
-## 💻 Core Programming Languages & Core Systems
+### ⚙️ Platform Support & Hardware Architecture
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
+![ARM64](https://img.shields.io/badge/ARM64-0091BD?style=for-the-badge&logo=arm&logoColor=white)
+![x86_64](https://img.shields.io/badge/x86__64-0071C5?style=for-the-badge&logo=intel&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
 
-* **Go (Golang)** - Primary language for concurrency-heavy core services, daemons, and control planes.
-* **Rust** - High-performance memory-safe execution layers, cryptography modules, and low-level drivers.
-* **TypeScript / Node.js** - Operator CLI tooling, administrative dashboards, and developer SDKs.
-* **Protocol Buffers (Protobuf) & gRPC** - High-efficiency inter-service communication and strongly-typed contract definitions.
+### ⚡ Low-Level Infrastructure & Performance
+![eBPF](https://img.shields.io/badge/eBPF-191919?style=for-the-badge&logo=ebpf&logoColor=white)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
+![io_uring](https://img.shields.io/badge/io__uring-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![cgroups](https://img.shields.io/badge/cgroups_v2-191919?style=for-the-badge&logo=linux&logoColor=white)
 
----
+### 🛠️ DevOps & Build Tools
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Make](https://img.shields.io/badge/Make-000000?style=for-the-badge&logo=gnu&logoColor=white)
+![Taskfile](https://img.shields.io/badge/Taskfile-2DA6B0?style=for-the-badge&logo=task&logoColor=white)
+![GolangCI-Lint](https://img.shields.io/badge/GolangCI--Lint-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 
-## ⛓️ Web3 & Infrastructure
+### ☁️ Cloud
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 
-* **libp2p** - Peer-to-peer networking, node discovery, secure encrypted transport channels, and NAT traversal.
-* **EVM / Smart Contracts** - On-chain state settlement, registry governance, and protocol interaction layers.
-* **Consensus Engines** - Integration pipelines for BFT/PoS consensus state machines and validator node telemetry.
-* **Cryptographic Primitives** - Ed25519, secp256k1, and zero-knowledge proof verification modules.
-
----
-
-## ⚙️ Platform Support & Hardware Architecture
-
-* **Architectures:** `linux/amd64`, `linux/arm64`, `darwin/amd64`, `darwin/arm64` (Apple Silicon native support).
-* **Hardware Interfacing:** Bare-metal telemetry collectors, direct kernel event streams, and edge computing nodes.
-* **Embedded & IoT Targets:** Low-resource resource-constrained environments and gateway aggregation hardware.
-
----
-
-## ⚡ Low-Level Infrastructure & Performance
-
-* **eBPF (Extended Berkeley Packet Filter)** - Kernel-level observability, network tracing, and security enforcement without context switching.
-* **Linux Kernel Subsystems** - cgroups v2 resource accounting, namespaces isolation, and io_uring high-throughput I/O.
-* **Memory Management** - Zero-copy buffer pooling, lock-free ring buffers, and custom memory allocators to eliminate GC overhead.
-* **Concurrency Models** - Actor model patterns and CSP (Communicating Sequential Processes) worker pools.
-
----
-
-## 🛠️ DevOps & Build Tools
-
-* **Makefile & Taskfile** - Standardized build orchestration, code generation hooks, and local development flows.
-* **GitHub Actions** - Continuous Integration (CI), automated multi-arch cross-compilation, and regression test suites.
-* **GolangCI-Lint & Staticcheck** - Rigorous static code analysis, security linting, and style enforcement.
-* **Docker & Buildx** - Multi-architecture container image authoring and optimized layer caching.
-
----
-
-## ☁️ Cloud
-
-* **Kubernetes & Helm** - Native orchestration, custom controllers (CRDs), and declarative GitOps deployments.
-* **Terraform / OpenTofu** - Infrastructure as Code (IaC) for multi-cloud provisioning and network topology management.
-* **AWS / GCP / Azure** - Enterprise cloud provider integrations for elastic compute, object storage, and secure key vaults.
-* **Prometheus & Grafana** - Real-time metrics scraping, alerting rules, and operational performance dashboards.
 
 ---
 
