@@ -10,6 +10,69 @@
 ## 🤖 What is this about?
 **Fleet** is an autonomous, self-healing multi-agent orchestration framework designed to manage, verify, test, and deploy software repositories across a secure network topology[span_0](start_span)[span_0](end_span). Driven by **Gemini Pro Thinking** capabilities and secured via **WireGuard** tunneling, Fleet coordinates specialized AI agents to execute continuous integration missions and audit codebases[span_1](start_span)[span_1](end_span).
 
+# 🚀 fleet-core — Architecture & Technical Stack
+
+## 🧰 Tech Stack badges & Architecture
+
+[![Go Version](https://img.shields.io/github/go-mod/go-version/fleet-core/fleet-core?style=flat-square&logo=go)](https://golang.org)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/fleet-core/fleet-core/ci.yml?style=flat-square&logo=githubactions)](https://github.com/fleet-core/fleet-core/actions)
+[![License](https://img.shields.io/github/license/fleet-core/fleet-core?style=flat-square)](LICENSE)
+[![Docker Pulls](https://img.shields.io/docker/pulls/fleetcore/core?style=flat-square&logo=docker)](https://hub.docker.com/r/fleetcore/core)
+[![Release](https://img.shields.io/github/v/release/fleet-core/fleet-core?style=flat-square)](https://github.com/fleet-core/fleet-core/releases)
+
+---
+
+## 💻 Core Programming Languages & Core Systems
+
+* **Go (Golang)** - Primary language for concurrency-heavy core services, daemons, and control planes.
+* **Rust** - High-performance memory-safe execution layers, cryptography modules, and low-level drivers.
+* **TypeScript / Node.js** - Operator CLI tooling, administrative dashboards, and developer SDKs.
+* **Protocol Buffers (Protobuf) & gRPC** - High-efficiency inter-service communication and strongly-typed contract definitions.
+
+---
+
+## ⛓️ Web3 & Infrastructure
+
+* **libp2p** - Peer-to-peer networking, node discovery, secure encrypted transport channels, and NAT traversal.
+* **EVM / Smart Contracts** - On-chain state settlement, registry governance, and protocol interaction layers.
+* **Consensus Engines** - Integration pipelines for BFT/PoS consensus state machines and validator node telemetry.
+* **Cryptographic Primitives** - Ed25519, secp256k1, and zero-knowledge proof verification modules.
+
+---
+
+## ⚙️ Platform Support & Hardware Architecture
+
+* **Architectures:** `linux/amd64`, `linux/arm64`, `darwin/amd64`, `darwin/arm64` (Apple Silicon native support).
+* **Hardware Interfacing:** Bare-metal telemetry collectors, direct kernel event streams, and edge computing nodes.
+* **Embedded & IoT Targets:** Low-resource resource-constrained environments and gateway aggregation hardware.
+
+---
+
+## ⚡ Low-Level Infrastructure & Performance
+
+* **eBPF (Extended Berkeley Packet Filter)** - Kernel-level observability, network tracing, and security enforcement without context switching.
+* **Linux Kernel Subsystems** - cgroups v2 resource accounting, namespaces isolation, and io_uring high-throughput I/O.
+* **Memory Management** - Zero-copy buffer pooling, lock-free ring buffers, and custom memory allocators to eliminate GC overhead.
+* **Concurrency Models** - Actor model patterns and CSP (Communicating Sequential Processes) worker pools.
+
+---
+
+## 🛠️ DevOps & Build Tools
+
+* **Makefile & Taskfile** - Standardized build orchestration, code generation hooks, and local development flows.
+* **GitHub Actions** - Continuous Integration (CI), automated multi-arch cross-compilation, and regression test suites.
+* **GolangCI-Lint & Staticcheck** - Rigorous static code analysis, security linting, and style enforcement.
+* **Docker & Buildx** - Multi-architecture container image authoring and optimized layer caching.
+
+---
+
+## ☁️ Cloud
+
+* **Kubernetes & Helm** - Native orchestration, custom controllers (CRDs), and declarative GitOps deployments.
+* **Terraform / OpenTofu** - Infrastructure as Code (IaC) for multi-cloud provisioning and network topology management.
+* **AWS / GCP / Azure** - Enterprise cloud provider integrations for elastic compute, object storage, and secure key vaults.
+* **Prometheus & Grafana** - Real-time metrics scraping, alerting rules, and operational performance dashboards.
+
 ---
 
 ## 🎯 What this does?
